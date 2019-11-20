@@ -48,7 +48,7 @@ Done
 
 ## Features/Usage/Types/Tasks
 
-![appytask](applytask.png)
+![Apply Task](images/apply_task.png)
 
 ## References
 
