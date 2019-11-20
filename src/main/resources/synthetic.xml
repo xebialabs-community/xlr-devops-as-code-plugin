@@ -15,4 +15,23 @@
            xmlns="http://www.xebialabs.com/deployit/synthetic"
            xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
 
+     <type type="devopsascode.Task" extends="xlrelease.PythonScript" virtual="true">
+        <property name="taskColor" default="#08B153" hidden="true" />
+        <property name="iconLocation" default="xlrxldeploy/xl-deploy.svg" hidden="true" />
+        <property name="server" category="input" label="Server" referenced-type="xldeploy.XLDeployServer" kind="ci" description="XL Deploy server to connect to."/>
+        <property name="username" required="false" category="input" description="Username to use when connecting to the XL Deploy server." />
+        <property name="password" password="true" required="false" category="input" label="Password" description="Password to use when connecting to the XL Deploy server." />
+        <property name="connectionFailureCount" default="0" category="script" kind="integer" description="Number of times that the connection has failed."/>
+    </type>
+
+    <type type="devopsascode.Apply" extends="devopsascode.Task">
+     <property name="scriptLocation" default="devopsascode/apply.py" hidden="true"/>
+        <property name="content" label="YAML" category="input" size="large" />
+        <property name="values" category="input" kind="map_string_string"/>
+        <property name="stdout" category="output" />
+        
+     </type>
+
+
+
 </synthetic>
