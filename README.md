@@ -19,7 +19,7 @@ See the [XL Release reference manual](https://docs.xebialabs.com/xl-release) for
 ## Overview
 
 This plugin offers to apply yaml content to an XLDeploy server.
-The 'xl' command is run locally from the XLRelease Server
+!!! important The 'xl' command is run locally from the XLRelease Server
 
 ## Requirements
 
@@ -38,7 +38,7 @@ Note:  XLD or XLR version should not be lower than lowest supported version.  Se
 A sample configuration is available in the project.
 
 ```
-$xl apply --xl-release-url http://localhost:5536 -f xebialabs.yaml --values xldeploy_XLDeployServer_xld_password=tiger
+$xl apply --xl-release-url http://localhost:5536 -f xebialabs.yaml --values xldeploy_XLDeployServer_xld_password=admin
 [1/2] Applying template.yaml (imported by xebialabs.yaml)
     Updated CI Configuration/Custom/Configurationc1f3ece59d0442228c4527f45b1a286a
     Updated CI Applications/Folderef6720f53172432ca0a8fc6becbfb420/Release1fc300aa156644959128d73c0197e4c9
@@ -47,7 +47,7 @@ $xl apply --xl-release-url http://localhost:5536 -f xebialabs.yaml --values xlde
 Done
 ````
 
-## Features/Usage/Types/Tasks
+## Tasks
 
 ![Apply Task](images/apply_task.png)
 
