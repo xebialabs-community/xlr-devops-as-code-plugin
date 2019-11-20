@@ -1,0 +1,5 @@
+.gradle
+build
+temp
+supervisord.*
+xl-release-9.0.6-server
