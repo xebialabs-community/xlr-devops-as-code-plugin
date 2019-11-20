@@ -28,8 +28,7 @@
      <property name="scriptLocation" default="devopsascode/apply.py" hidden="true"/>
         <property name="content" label="YAML" category="input" size="large" />
         <property name="values" category="input" kind="map_string_string"/>
-        <property name="stdout" category="output" />
-        
+        <property name="xlpath" category="input" default="/usr/local/bin"/>            
      </type>
 
 

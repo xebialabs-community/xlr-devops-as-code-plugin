@@ -44,7 +44,7 @@ class XLRunner:
             host = OverthereHost(localOpts)
             self.session =  OverthereHostSession(host,stream_command_output=False)
             command_line = self.command_line(content,values)
-            #print command_line
+            #print command_line            
             uploaded_runner = self.session.upload_text_content_to_work_dir(command_line,'xldeploy_xl_runner.sh',executable=True)
             #print uploaded_runner.path
             response = self.session.execute(command_line,check_success=False)
@@ -60,4 +60,4 @@ class XLRunner:
                 self.session.close_conn()
 
   
-XLRunner("/tmp/client",server).apply(content, values)
+XLRunner(xlpath,server).apply(content, values)

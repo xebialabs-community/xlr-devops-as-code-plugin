@@ -19,6 +19,7 @@ See the [XL Release reference manual](https://docs.xebialabs.com/xl-release) for
 ## Overview
 
 This plugin offers to apply yaml content to an XLDeploy server.
+The 'xl' command is run locally from the XLRelease Server
 
 ## Requirements
 
