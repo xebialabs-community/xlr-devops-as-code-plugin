@@ -29,7 +29,7 @@ Note:  XLD or XLR version should not be lower than lowest supported version.  Se
 
 ## Installation
 
-* Copy the [overtherepy jar file](https://github.com/xebialabs-community/overthere-pylib/releases/download/v0.0.4/overtherepy-0.0.4.jar) into the `XL_DEPLOY_SERVER/plugins/__local__` directory.
+* Copy the [overtherepy jar file](https://github.com/xebialabs-community/overthere-pylib/releases/download/v0.0.4/overtherepy-0.0.4.jar) into the `XL_RELEASAE_SERVER/plugins/__local__` directory.
 
 * Copy the latest JAR file from the [releases page](https://github.com/xebialabs-community/xld-helm-plugin/releases) into the `XL_RELEASE_SERVER/plugins/__local__` directory.
 * Restart the XL Deploy server.
